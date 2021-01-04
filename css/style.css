@@ -1,0 +1,21 @@
+/* ------------------------------------------------ GLOBAL ------------------------------------------------ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------- ELEMENTOS HTML -------------------------------------------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------------------------------------------- POR .CLASE ---------------------------------------------- */
+.fa-linkedin{
+    background-color: #0072b1;
+    color: white;
+    padding: 2px;
+}
+
