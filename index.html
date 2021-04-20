@@ -1,39 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matías Ferreyra</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matías Ferreyra</title>
 
-    <!-- CUSTOM CSS --> 
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./css/style.css">
 
-    <!-- FONT AWESOME -->    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="./images/logo_200x60.png" alt="logo-m85">
+  <header>
+    <nav class="navbar d-flex justify-content-around navbar-expand-lg navbar-light bg-white fixed-top">
+      <a class="navbar-brand" href="./index.html"><img src="./images/logo_200x60.png" alt="logo-m85"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#datos-personales">Datos personales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conocimientos">Conocimientos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#educacion">Educación</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  
+  <main>
+    <h1>Fullstack Developer</h1>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/CoderDesarrolloWeb.png" class="d-block w-100" alt="...">
         </div>
-        <div class="redes-sociales">
-            <a href="https://www.linkedin.com/in/matias-ferreyra-77982972/" target="_blank"><i class="fa fa-1x fa-linkedin" aria-hidden="true"></i></a>
+        <div class="carousel-item">
+          <img src="./images/CoderDesarrolloWeb.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/CoderDesarrolloWeb.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+  </main>
+
+    <div class="container-fluid">
+    <section id="datos-personales">
+
+      <div class="card flip-up">
+        Datos personales
+      </div> 
+
+    </section>
+
+    <section id="conocimientos">
+      Conocimientos
+    </section>
+
+    <section id="experiencia">
+      <div class="container-fluid row justify-content-md-center">
+
+        <div class="card col col-3 m-2 p-2 bg-primary text-white text-center" data-aos="fade-right" data-aos-duration="1500">
+          <div class="m-auto">
+            <h4>Senior Siebel Consultant</h4>
+            <h5>Nombre de la empresa: Advanced Software</h5>
+            <h6> Mar. 2020 – Ene.2021</h6>
+          </div>
         </div>
 
-        <section id="Datos personales">Datos personales</section>
-        <section id="Clientes">Clientes</section>
-        <section id="experiencia">Experiencia</section>
-        <section id="educacion">Educación</section>
+        <div class="card col col-8 m-2 p-2" data-aos="fade-left"  data-aos-duration="1500">
+          <ul class="pl-4 pt-3">
+            <h3>CENCOSUD</h3>
+            <li>Atención de tickets autogenerados por los usuarios.</li>
+            <li>Desarrollos en Siebel y PL/SQL.</li>
+            <li>Análisis funcional y soporte sobre el funcionamiento de la aplicación.</li>
+            <li>Revisión de issues productivos (análisis de código, integraciones EAI/EIM, gestión de tickets en Oracle support, etc).</li>
+            <li>Continuidad operativa: implementación y configuración de nuevos ambientes, análisis en conjunto con proveedores para solucionar temas de performance, atención de alertas (CheckMK), renovación de certificados SSL.</li>
+            <li>Gestión y participación en Pasajes a producción.</li>
+            <li>Implementación de patch de Siebel y Oracle HTTP Server en RHEL 6.</li>
+          </ul>
+        </div>
 
-    </header>
+        <div class="card col col-3 m-2 p-2 bg-primary text-white text-center" data-aos="fade-right"  data-aos-duration="1500">
+          <div class="m-auto">
+            <h4>Senior Siebel Consultant</h4>
+            <h5>Nombre de la empresa: IBM</h5>
+            <h6>oct. 2019 – mar. 2020</h6>
+          </div>
+        </div>
 
-    <main>Senior Siebel Consultant
-        Nombre de la empresa: Advanced Software Jornada completa
-        Fechas de empleomar. 2020 – actualidad
-        Duración del empleo10 meses
-    </main>
-    
+        <div class="card col col-8 m-2 p-2" data-aos="fade-left"  data-aos-duration="1500">
+          <ul class="pl-4 pt-3">
+            <h3>CENTURY LINK</h3>
+            <li>Soporte, análisis y solución de errores.</li>
+            <li>Análisis de requerimientos, estimaciones, pruebas de factibilidad, diseño técnico.</li>
+            <li>Elaboración y ejecución de casos de prueba.</li>
+            <li>Metodología AGILE (Daily, Grooming, Planning, Sprints).</li>
+          </ul>
+        </div>
+
+        <div class="card col col-3 m-2 p-2 bg-primary text-white text-center" data-aos="fade-right"  data-aos-duration="1500">
+          <div class="m-auto">
+            <h4>Senior Siebel Consultant</h4>
+            <h5>Freelance</h5>
+            <h6>sept. 2018 – sept. 2019</h6>
+          </div>  
+        </div>
+
+        <div class="card col col-8 m-2 p-2" data-aos="fade-left"  data-aos-duration="1500">
+          <ul class="pl-4 pt-3">
+            <h3>BANCO MACRO</h3>
+            <li>Mantenimiento de la aplicación.</li>
+            <li>desarrollo de nuevos requerimientos</li>
+          </ul> 
+        </div>
+
+        <div class="card col col-3 m-2 p-2 bg-primary text-white text-center" data-aos="fade-right"  data-aos-duration="1500">
+          <div class="my-auto">
+            <h4>Senior Siebel Consultant</h4>
+            <h5>Nombre de la empresa: Prosegur</h5>
+            <h6>mar. 2017 – ago. 2018</h6>
+          </div>
+        </div>
+
+        <div class="card col col-8 m-2 p-2" data-aos="fade-left"  data-aos-duration="1500">
+          <ul class="pl-4 pt-3">
+            <h3>PROSEGUR</h3>
+            <li>Desarrollo y Soporte Siebel para 9 países (LATAM y Europa).</li>
+            <li>Estimación de tiempos de desarrollo.</li>
+            <li>Análisis, diseño técnico, configuración y test de mejoras/evolutivos.</li>
+            <li>Análisis y corrección de errores en ambientes productivos.</li>
+            <li>BDD Oracle 11g (Consultas, Reportes, Datafixes, Stored Procedures, Packages)</li>
+          </ul>
+        </div>
+
+        <div class="card col col-3 m-2 p-2 bg-primary text-white" data-aos="fade-right"  data-aos-duration="1500">
+          <div class="m-auto">
+            <h4>Senior Siebel Consultant</h4>
+            <h5>Nombre de la empresa: IBM</h5>
+            <h6>jul. 2015 – mar. 2017</h6>
+          </div>
+        </div>
+
+        <div class="card col col-8 m-2 p-2" data-aos="fade-left"  data-aos-duration="1500">
+          <ul class="pl-4 pt-3 ">
+            <h3>CFA - EFECTIVO SÍ</h3>
+            <li>Análisis de nuevos requerimientos.</li>
+            <li>Siebel Open UI (Manifiesto, .JS, .CSS).</li>
+            <li>Análisis y resolución de incidentes.</li>
+            <li>Diseños técnicos y funcionales.</li>
+            <li>Diseño,elaboración y ejecución de casos de pruebas.</li>
+          </ul>
+
+          <ul class="pl-4 pt-3">
+            <h3>DIRECTV</h3>
+            <li>Configuración de vistas de reporte.</li>
+            <li>Análisis y correción de incidentes.</li>
+            <li>Elaboración de diseño técnico.</li>
+          </ul>
+        </div>
+
+        <div class="card col col-3 m-2 p-2 bg-primary text-white text-center" data-aos="fade-right"  data-aos-duration="1500">
+          <div class="m-auto">
+            <h4>Senior Siebel Consultant</h4>
+            <h5>Nombre de la empresa: Neoris</h5>
+            <h6>sept. 2014 – jul. 2015</h6>
+          </div>
+        </div>
+
+        <div class="card col col-8 m-2 p-2" data-aos="fade-left"  data-aos-duration="1500">
+          <h3>ZURICH</h3>
+          <ul class="pl-4 pt-3">
+            <li>Responsable mesa de ayuda Siebel Nivel 1 y 2.</li>
+            <li>Análisis y resolución de incidentes en producción.</li>
+            <li>Capacitación del personal de mesa de ayuda Siebel.</li>
+          </ul>
+
+          <h3>BANCO MACRO</h3>
+          <ul class="pl-4 pt-3">
+            <li>Análisis y resolución de incidentes en producción.</li>
+            <li>Desarrollo de evolutivos.</li>
+          </ul>
+
+
+          <h3>DIRECTV</h3>
+          <ul class="pl-4 pt-3">
+            <li>Implementación de los módulos Clients OM y Field Services.</li>
+            <li>Configuración de vistas (layout + lógica básica).</li>
+            <li>Soporte a los miembros Jr. del equipo.</li>
+            <li>Análisis/correción de bugs.</li>
+            <li>Ejecución de casos de prueba.</li>
+          </ul>
+
+          <h3>ISBAN(BANCO SANTANDER RIO)</h3>
+          <ul class="pl-4 pt-3">
+            <li>Desarrollo de webservices inbound de consulta (Loyalty).</li>
+          </ul>
+        </div>
+
+        <div class="card col col-3 m-2 p-2 bg-primary text-white text-center" data-aos="fade-right"  data-aos-duration="1500">
+          <div class="m-auto">
+            <h4>Senior Siebel Consultant</h4>
+            <h5>Nombre de la empresa: IT Resources</h5>
+            <h6>may. 2013 – sept. 2014</h6>
+          </div>
+        </div>
+
+        <div class="card col col-8 m-2 p-2" data-aos="fade-left"  data-aos-duration="1500">
+          <h3>BANCO GALICIA</h3>
+          <ul class="pl-4 pt-3">
+            <li>Configuraciones en siebel 8.1.1.7 (Workflows, BO, BC,Virtual BC, BS,Scripting, Tables, Links, RTE, DVM,
+              Personalizaciones, vistas, responsabilidades, Jobs, etc).</li>
+            <li>Visual Studio Integration Services (DTSX).</li>
+            <li>MS SQL Server 2008 (DDL,DML, Stored Procedures)</li>
+            <li>Elaboración de casos de pruebas y testing.</li>
+            <li>EAI: Servicios Inbound / Outbound ( webservices, datamaps, integration objects,soapui,XML,WSDL,etc).</li>
+            <li>EIM: Armado de .IFB, ejecución de jobs, Interface Table, Table Mapping, etc.</li>
+          </ul>
+        </div>
+
+        <div class="card col col-3 m-2 p-2 bg-primary text-white text-center" data-aos="fade-right"  data-aos-duration="1500">
+          <div class="m-auto">
+            <h4>Senior Siebel Consultant</h4>
+            <h5>Nombre de la empresa: IBM</h5>
+            <h6>ene. 2012 – abr. 2013</h6>
+          </div>
+        </div>
+
+        <div class="card col col-8 m-2 p-2" data-aos="fade-left"  data-aos-duration="1500">
+          <h3>TELECOM PERSONAL</h3>
+          <ul class="pl-4 pt-3">
+            <li>Configuración y testing Siebel 7.8</li>
+            <li>Reproducción de incidentes, Análisis, elaboración de correctivos y testing de defectos de producción.</li>
+            <li>SQL (Oracle 10g)</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="educacion">
+
+    </section>
+
+
     <footer></footer>
+  </div>
+
+  <!-- AOS animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- CUSTOM JS -->
+  <script src="main.js"></script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  -->
+  
+  <script>
+    AOS.init();
+  </script>
+
 </body>
-</html>
+
+</html> 

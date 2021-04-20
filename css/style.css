@@ -19,3 +19,11 @@ header{
     padding: 2px;
 }
 
+h1{
+	display: none;
+}
+
+.carousel-item{
+	width: 100vw;
+	height: 100vh;
+}
