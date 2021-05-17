@@ -27,3 +27,11 @@ h1{
 	width: 100vw;
 	height: 100vh;
 }
+
+.carousel-item img{
+    z-index: -10;
+}
+
+.btn-javascript{
+    z-index: 10;
+}
